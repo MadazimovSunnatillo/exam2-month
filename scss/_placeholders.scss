@@ -1,0 +1,27 @@
+%button {
+    all: unset;
+    padding: 12px 28px;
+    background: #003459;
+    border-radius: 57px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FDFDFD;
+}
+
+.nav__button {
+    all: unset;
+    padding: 12px 28px;
+    background: #003459;
+    border-radius: 57px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FDFDFD;
+    &:hover {
+        background-color: #1493ee;
+        color: #000;
+        transition: all .5s ease-in;
+    }
+}

@@ -1,0 +1,78 @@
+header#main-header {
+    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+    padding: 1.4rem 0;
+    position: relative;
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+        .nav__logo {
+            z-index: 9999;
+        }
+
+        .header__position {
+            position: absolute;
+            left: 180px;
+        }
+
+        nav {
+            z-index: 9999;
+            .flex {
+                z-index: 1;
+
+                gap: 48px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #003459;
+
+                .nav__link:hover {
+                    color: red;
+                    text-decoration: underline;
+                    transition: all .2s ease-in;
+                }
+            }
+        }
+
+        form {
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            background: #FDFDFD;
+            background-color: transparent;
+
+            input {
+                padding: 12px 0;
+                background: #FDFDFD;
+                border-radius: 46px;
+                width: 280px;
+                border: none;
+            }
+        }
+
+        .language-dropdown {
+            display: block;
+
+            .langs {
+                position: fixed;
+                top: 0;
+                width: 80px;
+                transform: translateY(60px);
+                background-color: transparent;
+                padding-bottom: 1rem;
+                z-index: 9999;
+                transition: transform 0.3s ease-in;
+            }
+
+            input[type="checkbox"]:checked+.langs {
+                transform: translateY(60px);
+
+                ul {
+                    display: none;
+                    transition: transform 0.3s ease-in;
+                }
+            }
+        }
+
+    }
+}

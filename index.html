@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monito</title>
+    <link rel="stylesheet" href="./css/main/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- start header section -->
+
+    <header id="main-header">
+      <div class="container flex">
+        <a href="#" class="nav__logo">
+          <img src="./images/icons/logo.png" alt="nav-logo" />
+        </a>
+        <nav>
+          <ul class="nav__item flex">
+            <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__list">
+              <a href="#" class="nav__link">Category</a>
+            </li>
+            <li class="nav__list"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__list"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <form
+          class="flex"
+          action="https://github.com/MadazimovSunnatillo/Authorie"
+        >
+          <input
+            type="text"
+            placeholder="&#xF002; Search something here!"
+            style="font-family: Arial, FontAwesome; text-indent: 1rem;"
+          />
+          <button type="submit" class="nav__button">Join the community</button>
+        </form>
+        <div class="language-dropdown">
+          <label for="langs">
+            Eng
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </label>
+          <input type="checkbox" hidden id="langs" />
+          <div class="langs">
+            <ul>
+              <label for="langs"></label>
+              <li><a href="#">Uz</a></li>
+              <li><a href="#">Rus</a></li>
+            </ul>
+          </div>
+        </div>
+        <img
+          class="header__position"
+          src="./images/Shapes/navbar.png"
+          alt="nav-position-image"
+        />
+      </div>
+    </header>
+
+    <!-- finish header section -->
+  </body>
+</html>

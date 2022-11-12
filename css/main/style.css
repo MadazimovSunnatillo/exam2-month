@@ -1,0 +1,121 @@
+@import url("https://fonts.cdnfonts.com/css/svn-gilroy");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "SVN-Gilroy", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.nav__button {
+  all: unset;
+  padding: 12px 28px;
+  background: #003459;
+  border-radius: 57px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FDFDFD;
+}
+.nav__button:hover {
+  background-color: #1493ee;
+  color: #000;
+  transition: all 0.5s ease-in;
+}
+
+header#main-header {
+  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+  padding: 1.4rem 0;
+  position: relative;
+}
+header#main-header .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+header#main-header .flex .nav__logo {
+  z-index: 9999;
+}
+header#main-header .flex .header__position {
+  position: absolute;
+  left: 180px;
+}
+header#main-header .flex nav {
+  z-index: 9999;
+}
+header#main-header .flex nav .flex {
+  z-index: 1;
+  gap: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #003459;
+}
+header#main-header .flex nav .flex .nav__link:hover {
+  color: red;
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+}
+header#main-header .flex form {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: #FDFDFD;
+  background-color: transparent;
+}
+header#main-header .flex form input {
+  padding: 12px 0;
+  background: #FDFDFD;
+  border-radius: 46px;
+  width: 280px;
+  border: none;
+}
+header#main-header .flex .language-dropdown {
+  display: block;
+}
+header#main-header .flex .language-dropdown .langs {
+  position: fixed;
+  top: 0;
+  width: 80px;
+  transform: translateY(60px);
+  background-color: transparent;
+  padding-bottom: 1rem;
+  z-index: 9999;
+  transition: transform 0.3s ease-in;
+}
+header#main-header .flex .language-dropdown input[type=checkbox]:checked + .langs {
+  transform: translateY(60px);
+}
+header#main-header .flex .language-dropdown input[type=checkbox]:checked + .langs ul {
+  display: none;
+  transition: transform 0.3s ease-in;
+}/*# sourceMappingURL=style.css.map */
