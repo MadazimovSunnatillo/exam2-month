@@ -1,6 +1,7 @@
 section#adoption {
     margin-top: 68px;
     position: relative;
+    z-index: -1;
 
     .adoption__bgc {
         background: #FFB775;
@@ -21,7 +22,7 @@ section#adoption {
 }
 
 .adoption__text {
-    z-index: 999;
+    z-index: 1;
     padding-left: 85px;
 
     .adoption__title {
@@ -75,9 +76,17 @@ section#adoption {
 
 .right {
     position: absolute;
+    z-index: 1;
     bottom: 0;
-    right: 14%;
+    right: 0;
 }
+
 .adoption__right-image {
+    z-index: 9999999;
+    z-index: 100;
+}
+
+.adoption__image {
+    position: relative;
     z-index: 999;
 }

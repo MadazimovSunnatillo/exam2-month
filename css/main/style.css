@@ -37,7 +37,7 @@ img {
   display: grid;
 }
 
-.adoption__text .adoption__button-right, .adoption__text .adoption__button-left, section#partners .flex .partner__link, section#product .flex .product__info-link, section#friend .friends__right-section .friend__button-right, section#friend .friends__right-section .friend__button, section#new .flex .info__link, section#showcase .flex .showcase__button-right, section#showcase .flex .showcase__button, header#main-header .dropdown__left .dropdown__items form button {
+section#knowledge .flex .knoweldge__link, .adoption__text .adoption__button-right, .adoption__text .adoption__button-left, section#partners .flex .partner__link, section#product .flex .product__info-link, section#friend .friends__right-section .friend__button-right, section#friend .friends__right-section .friend__button, section#new .flex .info__link, section#showcase .flex .showcase__button-right, section#showcase .flex .showcase__button, header#main-header .dropdown__left .dropdown__items form button {
   all: unset;
   padding: 12px 28px;
   background: #003459;
@@ -48,7 +48,7 @@ img {
   line-height: 24px;
   color: #FDFDFD;
 }
-.adoption__text .adoption__button-right:hover, .adoption__text .adoption__button-left:hover, section#partners .flex .partner__link:hover, section#product .flex .product__info-link:hover, section#friend .friends__right-section .friend__button-right:hover, section#friend .friends__right-section .friend__button:hover, section#new .flex .info__link:hover, section#showcase .flex .showcase__button-right:hover, section#showcase .flex .showcase__button:hover, header#main-header .dropdown__left .dropdown__items form button:hover {
+section#knowledge .flex .knoweldge__link:hover, .adoption__text .adoption__button-right:hover, .adoption__text .adoption__button-left:hover, section#partners .flex .partner__link:hover, section#product .flex .product__info-link:hover, section#friend .friends__right-section .friend__button-right:hover, section#friend .friends__right-section .friend__button:hover, section#new .flex .info__link:hover, section#showcase .flex .showcase__button-right:hover, section#showcase .flex .showcase__button:hover, header#main-header .dropdown__left .dropdown__items form button:hover {
   background-color: #1493ee;
   color: #000;
   transition: all 0.5s ease-in;
@@ -527,6 +527,7 @@ section#partners .flex .partner__link span {
 section#adoption {
   margin-top: 68px;
   position: relative;
+  z-index: -1;
 }
 section#adoption .adoption__bgc {
   background: #FFB775;
@@ -542,7 +543,7 @@ section#adoption .adoption__bgc .flex .left {
 }
 
 .adoption__text {
-  z-index: 999;
+  z-index: 1;
   padding-left: 85px;
 }
 .adoption__text .adoption__title {
@@ -587,12 +588,91 @@ section#adoption .adoption__bgc .flex .left {
 
 .right {
   position: absolute;
+  z-index: 1;
   bottom: 0;
-  right: 14%;
+  right: 0;
 }
 
 .adoption__right-image {
+  z-index: 9999999;
+  z-index: 100;
+}
+
+.adoption__image {
+  position: relative;
   z-index: 999;
+}
+
+section#knowledge {
+  padding-top: 60px;
+}
+section#knowledge .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+section#knowledge .flex .top .knowledge__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+section#knowledge .flex .top .knowledge__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #003459;
+}
+section#knowledge .flex .knoweldge__link {
+  background-color: unset;
+  border: 3px solid #002A48;
+  color: #002A48;
+}
+section#knowledge .flex .knoweldge__link span {
+  padding-left: 10px;
+}
+section#knowledge .card1 {
+  margin-top: 28px;
+  background: #FDFDFD;
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  width: 380px;
+  height: 424px;
+}
+section#knowledge .card1 img {
+  padding: 8px 8px 0 8px;
+  display: block;
+}
+section#knowledge .card1 .card-button {
+  margin: 13px 0;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+  background: #00A7E7;
+  border-radius: 28px;
+  color: #FDFDFD;
+}
+section#knowledge .card1 .card__title {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 13px;
+  line-height: 24px;
+  width: 348px;
+  color: #00171F;
+}
+section#knowledge .card1 .card-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #242B33;
+  padding-top: 4px;
+  width: 348px;
+  padding-bottom: 16px;
 }
 
 @media (min-width: 1400px) {
