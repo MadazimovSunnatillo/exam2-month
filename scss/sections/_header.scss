@@ -2,10 +2,14 @@ header#main-header {
     background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
     padding: 1.4rem 0;
     position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 
     .flex {
         justify-content: space-between;
         align-items: center;
+
         .nav__logo {
             z-index: 9999;
         }
@@ -13,10 +17,12 @@ header#main-header {
         .header__position {
             position: absolute;
             left: 180px;
+            top: 0;
         }
 
         nav {
             z-index: 9999;
+
             .flex {
                 z-index: 1;
 

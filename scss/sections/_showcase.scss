@@ -1,0 +1,115 @@
+section#showcase {
+    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+    overflow: hidden;
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+
+        .showcase1 {
+            left: -15px;
+        }
+
+        .showcase {
+            top: 0;
+            left: 40%;
+            z-index: 1;
+        }
+
+        .showcase2 {
+            top: 80%;
+            left: -3rem;
+
+        }
+
+        .showcase3 {
+            top: 3rem;
+            left: 55%;
+        }
+
+        .showcase4 {
+            top: 6rem;
+            left: 50%;
+        }
+
+        .showcase5 {
+            top: 6.5rem;
+            left: 50%;
+        }
+
+        .showcase7 {
+            top: 33%;
+            left: 52%;
+        }
+
+        .showcase8 {
+            top: 25%;
+            left: 52%;
+        }
+
+        .hero__info {
+            padding-top: 90px;
+        }
+
+        .hero__title {
+            font-weight: 800;
+            z-index: 1;
+            position: relative;
+            width: 465px;
+            padding-bottom: 4px;
+            font-size: 60px;
+            line-height: 68px;
+            text-transform: capitalize;
+            color: $blue
+        }
+
+        .hero__title-bottom {
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 60px;
+            padding-bottom: 24px;
+            text-transform: capitalize;
+            color: $blue;
+        }
+
+        .hero__description {
+            font-weight: 500;
+            width: 480px;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 34px;
+            color: #242B33;
+        }
+
+        .showcase__button {
+            @extend %button;
+            font-weight: 500;
+            background-color: unset;
+            border: 2px solid $blue;
+            font-size: 16px;
+            color: $blue;
+            margin-bottom: 200px;
+
+            &:hover {
+                background-color: #1493ee;
+                color: #000;
+                transition: all .5s ease-in;
+            }
+
+            span {
+                padding-left: 10px;
+            }
+        }
+
+        .showcase__button-right {
+            @extend %button;
+            margin-left: 1rem;
+        }
+    }
+}

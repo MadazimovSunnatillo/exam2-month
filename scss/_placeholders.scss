@@ -8,6 +8,12 @@
     font-size: 16px;
     line-height: 24px;
     color: #FDFDFD;
+
+    &:hover {
+        background-color: #1493ee;
+        color: #000;
+        transition: all .5s ease-in;
+    }
 }
 
 .nav__button {
@@ -19,6 +25,7 @@
     font-weight: 500;
     font-size: 16px;
     color: #FDFDFD;
+
     &:hover {
         background-color: #1493ee;
         color: #000;

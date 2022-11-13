@@ -1,0 +1,48 @@
+@media (max-width: $lg) {
+    .container {
+        width: $md - 20px;
+    }
+
+    header#main-header {
+        .flex {
+           
+            nav {
+                display: none;
+            }
+
+            form {
+                display: none;
+            }
+
+            .language-dropdown {
+                display: none;
+
+                label {
+                    display: none;
+                }
+
+                .langs {
+                    display: none;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: $md) {
+    .container {
+        width: $sm - 20px;
+
+    }
+
+
+}
+
+@media (max-width: $sm) {
+    .container {
+        max-width: 100%;
+    }
+
+}
