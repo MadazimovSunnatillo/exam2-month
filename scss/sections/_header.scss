@@ -6,26 +6,89 @@ header#main-header {
     top: 0;
     z-index: 999;
 
+    .dropdown__left {
+        display: none;
+
+        .dropdown__items {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 359px;
+            height: 100%;
+            background-color: #003459;
+            box-shadow: 0 0 20px grey;
+            transform: translateX(-100%);
+            padding: 1rem;
+            transition: transform 0.3s ease-in;
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+                flex-direction: column;
+
+                button {
+                    @extend %button;
+                    width: 230px;
+                    background-color: $btn;
+
+                    &:hover {
+                        background-color: $blue;
+                        color: #F7DBA7;
+                    }
+                }
+            }
+
+            label {
+                i {
+                    color: #fff;
+                    font-size: 30px;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+
+            ul {
+                margin-top: 59px;
+            }
+
+            li {
+                font-weight: 700;
+                font-size: 20px;
+                letter-spacing: 3px;
+                line-height: 24px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding: 5px;
+                color: #F7DBA7;
+            }
+        }
+
+        input[type="checkbox"]:checked+.dropdown__items {
+            transform: translateX(0);
+        }
+    }
+
+
     .flex {
         justify-content: space-between;
         align-items: center;
 
         .nav__logo {
-            z-index: 9999;
+            z-index: 1;
         }
 
         .header__position {
-            position: absolute;
-            left: 180px;
-            top: 0;
+            position: fixed;
+            left: 7%;
+            top: -10px;
+            rotate: 5deg;
+            z-index: -1;
         }
 
         nav {
-            z-index: 9999;
 
             .flex {
-                z-index: 1;
-
                 gap: 48px;
                 font-weight: 700;
                 font-size: 16px;
@@ -53,6 +116,24 @@ header#main-header {
                 border-radius: 46px;
                 width: 280px;
                 border: none;
+                margin-right: 1rem;
+            }
+
+            .nav__button {
+                all: unset;
+                padding: 12px 28px;
+                background: #003459;
+                border-radius: 57px;
+                display: inline-block;
+                font-weight: 500;
+                font-size: 16px;
+                color: #FDFDFD;
+
+                &:hover {
+                    background-color: #1493ee;
+                    color: #000;
+                    transition: all .5s ease-in;
+                }
             }
         }
 
@@ -63,15 +144,15 @@ header#main-header {
                 position: fixed;
                 top: 0;
                 width: 80px;
-                transform: translateY(60px);
-                background-color: transparent;
-                padding-bottom: 1rem;
-                z-index: 9999;
+                height: 80px;
+                transform: translateY(90px);
+                background-color: none;
+                z-index: 1;
                 transition: transform 0.3s ease-in;
             }
 
             input[type="checkbox"]:checked+.langs {
-                transform: translateY(60px);
+                transform: translateY(-100px);
 
                 ul {
                     display: none;

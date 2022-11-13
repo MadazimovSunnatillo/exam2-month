@@ -1,11 +1,57 @@
-@media (max-width: $lg) {
+@media (min-width: $lg) {
+    header#main-header {
+        .dropdown__left {
+            display: none;
+        }
+
+        .search {
+            display: none;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: $lg) {
     .container {
         width: $md - 20px;
     }
 
+    section#partners {
+        display: none;
+    }
+
+    section#product {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            justify-content: center;
+        }
+    }
+
+    section#new {
+        p {
+            padding-left: 5rem;
+        }
+
+        .flex {
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+        }
+
+        .grid {
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     header#main-header {
         .flex {
-           
+            .dropdown__left {
+                display: block;
+            }
+
             nav {
                 display: none;
             }
@@ -31,11 +77,100 @@
 
 }
 
-@media (max-width: $md) {
+@media only screen and (max-width: $md) {
     .container {
         width: $sm - 20px;
+    }
+
+    section#partners {
+        display: none;
+    }
+
+    section#product {
+        display: none;
 
     }
+
+
+
+
+    section#friend {
+        position: relative;
+
+        .flex {
+            flex-direction: column-reverse;
+            justify-items: center;
+            height: 650px;
+        }
+
+        .friends__right-section {
+            background-color: $btn;
+
+            img {
+                display: none;
+            }
+
+            .friend__title {
+                font-size: 36px;
+                text-align: center;
+                text-transform: capitalize;
+                color: $blue
+            }
+
+            .friend__title-bottom {
+                text-align: center;
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: capitalize;
+                color: $blue;
+            }
+
+            .friend__description {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                width: 342px;
+                color: #242B33;
+            }
+
+            .friend-links {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    section#new {
+
+        p {
+            display: none;
+        }
+
+        .flex {
+            .info__link {
+                display: none;
+            }
+        }
+
+        .grid {
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+
+            .cards {
+                .card__desc {
+                    width: 161px;
+                }
+
+                span {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
 
 
 }
@@ -44,5 +179,4 @@
     .container {
         max-width: 100%;
     }
-
 }

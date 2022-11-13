@@ -1,0 +1,88 @@
+section#friend {
+    padding-top: 60px;
+
+    .friends__right-section {
+        position: relative;
+        z-index: 1;
+        padding: 64px 85px 0 0;
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            height: 100%;
+        }
+
+        .friend__title {
+            font-weight: 800;
+            font-size: 52px;
+            line-height: 68px;
+            text-transform: capitalize;
+            color: $blue
+        }
+
+        .friend__title-bottom {
+            text-align: right;
+
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            text-transform: capitalize;
+            color: $blue;
+            padding-bottom: 8px;
+        }
+
+        .friend__description {
+            padding-bottom: 24px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #242B33;
+            width: 390px;
+            text-align: right;
+        }
+        .friend-links {
+            display: flex;
+            justify-content: end;
+        }
+
+        .friend__button {
+            @extend %button;
+            background-color: unset;
+            color: $blue;
+            border: 2px solid $blue;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .friend__button-right {
+            @extend %button;
+            margin-left: 1rem;
+        }
+    }
+
+    .friend__bgc {
+        position: relative;
+        border-radius: 20px;
+        background-color: #003459;
+    }
+
+    .flex {
+        justify-content: space-between;
+
+        .friend__left-section {
+            .position-left {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            .position-1 {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}

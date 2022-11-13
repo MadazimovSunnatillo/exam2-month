@@ -1,0 +1,35 @@
+section#partners {
+    padding-top: 104px;
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 31px;
+            color: #000000;
+
+            b {
+                font-weight: 700;
+                padding-left: 8px;
+                font-size: 24px;
+                line-height: 36px;
+                text-transform: capitalize;
+                color: #003459;
+            }
+        }
+
+        .partner__link {
+            @extend %button;
+            background-color: unset;
+            border: 3px solid $blue;
+            color: $blue;
+
+            span {
+                padding-left: 1rem;
+            }
+        }
+    }
+}

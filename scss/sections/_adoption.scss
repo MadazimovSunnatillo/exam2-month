@@ -1,0 +1,83 @@
+section#adoption {
+    margin-top: 68px;
+    position: relative;
+
+    .adoption__bgc {
+        background: #FFB775;
+        border-radius: 20px;
+
+        .flex {
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                position: absolute;
+                left: 1;
+            }
+
+
+        }
+    }
+}
+
+.adoption__text {
+    z-index: 999;
+    padding-left: 85px;
+
+    .adoption__title {
+        font-weight: 800;
+        padding-bottom: 2px;
+        font-size: 52px;
+        line-height: 68px;
+        text-transform: capitalize;
+        color: #003459;
+        display: flex;
+
+        span {
+            padding-left: 1rem;
+        }
+    }
+
+    .adoption__title-bottom {
+        font-weight: 700;
+        padding-bottom: 8px;
+        font-size: 36px;
+        line-height: 54px;
+        text-transform: capitalize;
+        color: #003459;
+    }
+
+    .adoption__description {
+        font-weight: 500;
+        font-size: 14px;
+        padding-bottom: 42px;
+        line-height: 18px;
+        color: #242B33;
+        width: 394px;
+    }
+
+    .adoption__button-left {
+        @extend %button;
+        margin-right: 1rem;
+    }
+
+    .adoption__button-right {
+        @extend %button;
+        background-color: unset;
+        border: 3px solid $blue;
+        color: $blue;
+
+        span {
+            padding-left: 10px;
+        }
+    }
+}
+
+.right {
+    position: absolute;
+    bottom: 0;
+    right: 14%;
+}
+.adoption__right-image {
+    z-index: 999;
+}
