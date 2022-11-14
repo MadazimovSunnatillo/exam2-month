@@ -17,11 +17,16 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -605,6 +610,7 @@ section#adoption .adoption__bgc .flex .left {
 
 section#knowledge {
   padding-top: 60px;
+  margin-bottom: 60px;
 }
 section#knowledge .flex {
   justify-content: space-between;
@@ -633,14 +639,13 @@ section#knowledge .flex .knoweldge__link span {
 }
 section#knowledge .card1 {
   margin-top: 28px;
+  width: 380px;
   background: #FDFDFD;
   box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  width: 380px;
-  height: 424px;
+  padding: 8px 8px 0 8px;
 }
 section#knowledge .card1 img {
-  padding: 8px 8px 0 8px;
   display: block;
 }
 section#knowledge .card1 .card-button {
@@ -675,6 +680,89 @@ section#knowledge .card1 .card-description {
   padding-bottom: 16px;
 }
 
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+section#footer {
+  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+  border-radius: 40px 40px 0px 0px;
+  padding-top: 80px;
+}
+section#footer .footer__bottom {
+  padding: 50px 0;
+}
+section#footer .footer__bottom span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667479;
+}
+section#footer .footer__links .flex {
+  gap: 30px;
+}
+section#footer footer {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+}
+section#footer footer .flex {
+  gap: 60px;
+}
+section#footer footer .flex .footer__list .footer__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00171F;
+  transition: color 0.2s ease-in;
+}
+section#footer footer .flex .footer__list .footer__link:hover {
+  color: red;
+  text-decoration: underline;
+}
+section#footer .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+section#footer .footer__placeholder {
+  margin-bottom: 40px;
+  padding: 32px;
+  background: #003459;
+  border-radius: 16px;
+}
+section#footer .footer__placeholder span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #FDFDFD;
+  width: 389px;
+}
+section#footer .footer__placeholder form {
+  width: 700px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 14px;
+}
+section#footer .footer__placeholder form button {
+  padding: 14px 30px;
+  background: #003459;
+  border-radius: 8px;
+  color: #FDFDFD;
+  margin-left: 12px;
+  transition: background-color 0.2s ease-in;
+}
+section#footer .footer__placeholder form button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+section#footer .footer__placeholder form .flex {
+  justify-items: flex-end;
+}
+section#footer .footer__placeholder form input {
+  padding: 12px;
+  width: 508px;
+}
+
 @media (min-width: 1400px) {
   header#main-header .dropdown__left {
     display: none;
@@ -686,6 +774,19 @@ section#knowledge .card1 .card-description {
 @media only screen and (max-width: 1400px) {
   .container {
     width: 814px;
+  }
+  section#friend {
+    display: none;
+  }
+  section#adoption {
+    display: none;
+  }
+  section#knowledge .grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  section#knowledge .grid .card2 {
+    display: none;
   }
   section#partners {
     display: none;
@@ -725,55 +826,61 @@ section#knowledge .card1 .card-description {
   header#main-header .flex .language-dropdown .langs {
     display: none;
   }
+  section#footer .footer__bottom {
+    flex-direction: column;
+  }
+  section#footer .footer__bottom span {
+    padding: 1rem 0;
+  }
+  section#footer .footer__items {
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  section#footer footer {
+    flex-direction: column;
+  }
+  .footer__placeholder span {
+    display: none;
+  }
+  .footer__placeholder .flex {
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 834px) {
   .container {
     width: 394px;
+  }
+  section#showcase .hero-images .hero__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  section#footer .footer__items a {
+    margin-bottom: 1rem;
+  }
+  section#footer .footer__placeholder form {
+    width: 350px;
+    height: 132px;
+    width: 350px;
+    height: 132px;
+    display: inline-block;
+  }
+  section#footer .footer__placeholder form button {
+    width: 326px;
+    height: 48px;
+    margin: 5px auto;
+  }
+  section#footer .footer__placeholder form input {
+    width: 326px;
+    height: 48px;
+    margin-top: 10px;
   }
   section#partners {
     display: none;
   }
   section#product {
     display: none;
-  }
-  section#friend {
-    position: relative;
-  }
-  section#friend .flex {
-    flex-direction: column-reverse;
-    justify-items: center;
-    height: 650px;
-  }
-  section#friend .friends__right-section {
-    background-color: #F7DBA7;
-  }
-  section#friend .friends__right-section img {
-    display: none;
-  }
-  section#friend .friends__right-section .friend__title {
-    font-size: 36px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #002A48;
-  }
-  section#friend .friends__right-section .friend__title-bottom {
-    text-align: center;
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: capitalize;
-    color: #002A48;
-  }
-  section#friend .friends__right-section .friend__description {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    width: 342px;
-    color: #242B33;
-  }
-  section#friend .friends__right-section .friend-links {
-    display: flex;
-    justify-content: center;
   }
   section#new p {
     display: none;

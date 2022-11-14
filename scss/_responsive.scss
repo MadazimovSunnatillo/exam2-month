@@ -17,6 +17,27 @@
         width: $md - 20px;
     }
 
+
+
+    section#friend {
+        display: none;
+    }
+
+    section#adoption {
+        display: none;
+    }
+
+    section#knowledge {
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+
+            .card2 {
+                display: none;
+            }
+        }
+    }
+
     section#partners {
         display: none;
     }
@@ -75,11 +96,90 @@
         }
     }
 
+
+
+
+    section#footer {
+        .footer__bottom {
+            flex-direction: column;
+
+            span {
+                padding: 1rem 0;
+            }
+        }
+
+        .footer__items {
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+
+            flex-direction: column;
+        }
+    }
+
+    .footer__placeholder {
+        span {
+            display: none;
+        }
+
+        .flex {
+            flex-direction: column;
+        }
+    }
 }
+
+
+
+
 
 @media only screen and (max-width: $md) {
     .container {
         width: $sm - 20px;
+    }
+
+    section#showcase {
+        .hero-images {
+            .hero__image {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+            }
+        }
+    }
+
+    section#footer {
+        .footer__items {
+            a {
+                margin-bottom: 1rem;
+
+            }
+        }
+
+        .footer__placeholder {
+            form {
+                button {
+                    width: 326px;
+                    height: 48px;
+                    margin: 5px auto;
+                }
+
+                width: 350px;
+                height: 132px;
+
+                input {
+                    width: 326px;
+                    height: 48px;
+                    margin-top: 10px;
+                }
+
+                width: 350px;
+                height: 132px;
+                display: inline-block;
+            }
+        }
     }
 
     section#partners {
@@ -89,56 +189,6 @@
     section#product {
         display: none;
 
-    }
-
-
-
-
-    section#friend {
-        position: relative;
-
-        .flex {
-            flex-direction: column-reverse;
-            justify-items: center;
-            height: 650px;
-        }
-
-        .friends__right-section {
-            background-color: $btn;
-
-            img {
-                display: none;
-            }
-
-            .friend__title {
-                font-size: 36px;
-                text-align: center;
-                text-transform: capitalize;
-                color: $blue
-            }
-
-            .friend__title-bottom {
-                text-align: center;
-                font-weight: 700;
-                font-size: 24px;
-                text-transform: capitalize;
-                color: $blue;
-            }
-
-            .friend__description {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 18px;
-                text-align: center;
-                width: 342px;
-                color: #242B33;
-            }
-
-            .friend-links {
-                display: flex;
-                justify-content: center;
-            }
-        }
     }
 
     section#new {
